@@ -1,0 +1,29 @@
+using EventAggregator.Examples.Events;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace EventAggregator.Examples.Components
+{
+    public class HealthChangeButton : PubSubMonoBehaviour
+    {
+        [SerializeField]
+        private int amount = 1;
+
+        private Button Button { get; set; }
+
+        private void Awake()
+        {
+            this.Button = this.GetComponent<Button>();
+
+            if (this.Button != null)
+            {
+                this.Button.onClick.AddListener(this.HealthChange);
+            }
+        }
+
+        private void HealthChange()
+        {
+            PubSub.Publish(new HealthChanged(amount));
+        }
+    }
+}
