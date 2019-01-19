@@ -3,7 +3,7 @@ using UniRxEventAggregator.Examples.Events;
 using UniRx;
 using UnityEngine.UI;
 
-namespace EventAggregator.Examples.Components
+namespace UniRxEventAggregator.Examples.Components
 {
     public class DescriptionText : PubSubMonoBehaviour
     {

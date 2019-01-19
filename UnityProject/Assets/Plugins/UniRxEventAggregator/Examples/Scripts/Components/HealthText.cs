@@ -2,7 +2,7 @@ using UniRxEventAggregator.Events;
 using UniRxEventAggregator.Examples.BehaviourSubjects;
 using UnityEngine.UI;
 
-namespace EventAggregator.Examples.Components
+namespace UniRxEventAggregator.Examples.Components
 {
     public class HealthText : PubSubMonoBehaviour
     {
