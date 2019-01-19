@@ -1,7 +1,7 @@
 ﻿using System;
 using UniRx;
 
-namespace Events
+namespace UniRxEventAggregator.Events
 {
     /// <summary>
     /// A behaviour that interacts with the PubSub event aggregator

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Events
+namespace UniRxEventAggregator.Events
 {
     public class GameObjectEvent : IGameObjectEvent
     {

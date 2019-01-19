@@ -4,7 +4,7 @@ using System.Linq;
 using UniRx;
 using UnityEngine;
 
-namespace Events
+namespace UniRxEventAggregator.Events
 {
     /// <remarks>
     /// This class exists to allow for 'hot' manual publishes through the PubSub event aggregator

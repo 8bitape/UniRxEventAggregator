@@ -1,10 +1,10 @@
-﻿using Extensions;
+﻿using UniRxEventAggregator.Extensions;
 using Realtime.Messaging.Internal;
 using System;
 using System.Linq;
 using UniRx;
 
-namespace Events
+namespace UniRxEventAggregator.Events
 {
     /// <remarks>This works better than a Subject<IObservable<T>> approach for warm observables (in converters)
     /// but technically leaves an ever expanding subject dictionary (though these are small footprints).

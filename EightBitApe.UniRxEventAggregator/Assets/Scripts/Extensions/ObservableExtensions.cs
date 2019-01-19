@@ -1,7 +1,7 @@
 ﻿using System;
 using UniRx;
 
-namespace Extensions
+namespace UniRxEventAggregator.Extensions
 {
     public static class ObservableExtensions
     {

@@ -1,6 +1,6 @@
 ﻿using UniRx;
 
-namespace Events
+namespace UniRxEventAggregator.Events
 {
     public class EventAndSource<T>
     {

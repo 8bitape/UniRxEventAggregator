@@ -2,7 +2,7 @@
 using UniRx;
 using UnityEngine;
 
-namespace Events
+namespace UniRxEventAggregator.Events
 {
     /// <summary>
     /// A behaviour with helpers for dealing with Rx streams

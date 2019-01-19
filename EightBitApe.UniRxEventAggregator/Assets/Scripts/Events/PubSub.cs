@@ -1,7 +1,7 @@
 ﻿using System;
 using UniRx;
 
-namespace Events
+namespace UniRxEventAggregator.Events
 {
     public static class PubSub
     {

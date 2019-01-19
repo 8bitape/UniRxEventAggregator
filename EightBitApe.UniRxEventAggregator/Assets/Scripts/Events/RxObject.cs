@@ -1,8 +1,8 @@
-﻿using Events;
+﻿using UniRxEventAggregator.Events;
 using System;
 using UniRx;
 
-namespace Events
+namespace UniRxEventAggregator.Events
 {
     public class RxObject : IDisposable
     {
