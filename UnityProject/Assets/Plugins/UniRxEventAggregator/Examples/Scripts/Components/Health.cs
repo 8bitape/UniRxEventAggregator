@@ -1,8 +1,9 @@
-﻿using EventAggregator.Examples.BehaviourSubjects;
-using EventAggregator.Examples.Events;
+﻿using UniRxEventAggregator.Events;
+using UniRxEventAggregator.Examples.BehaviourSubjects;
+using UniRxEventAggregator.Examples.Events;
 using UniRx;
 
-namespace EventAggregator.Examples.Components
+namespace UniRxEventAggregator.Examples.Components
 {
     public class Health : PubSubMonoBehaviour
     {

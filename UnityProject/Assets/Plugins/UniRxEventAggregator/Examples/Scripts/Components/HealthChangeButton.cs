@@ -1,8 +1,9 @@
-using EventAggregator.Examples.Events;
+using UniRxEventAggregator.Events;
+using UniRxEventAggregator.Examples.Events;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace EventAggregator.Examples.Components
+namespace UniRxEventAggregator.Examples.Components
 {
     public class HealthChangeButton : PubSubMonoBehaviour
     {

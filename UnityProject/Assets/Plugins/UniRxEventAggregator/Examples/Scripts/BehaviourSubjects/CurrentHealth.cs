@@ -1,4 +1,4 @@
-﻿namespace EventAggregator.Examples.BehaviourSubjects
+﻿namespace UniRxEventAggregator.Examples.BehaviourSubjects
 {
     public class CurrentHealth
     {

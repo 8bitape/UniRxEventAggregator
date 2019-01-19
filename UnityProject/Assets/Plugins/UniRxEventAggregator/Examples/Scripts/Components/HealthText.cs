@@ -1,4 +1,5 @@
-using EventAggregator.Examples.BehaviourSubjects;
+using UniRxEventAggregator.Events;
+using UniRxEventAggregator.Examples.BehaviourSubjects;
 using UnityEngine.UI;
 
 namespace EventAggregator.Examples.Components

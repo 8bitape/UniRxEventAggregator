@@ -1,4 +1,5 @@
-﻿using EventAggregator.Examples.Events;
+﻿using UniRxEventAggregator.Events;
+using UniRxEventAggregator.Examples.Events;
 using UniRx;
 using UnityEngine.UI;
 

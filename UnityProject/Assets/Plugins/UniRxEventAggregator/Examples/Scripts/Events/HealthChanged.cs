@@ -1,4 +1,4 @@
-namespace EventAggregator.Examples.Events
+namespace UniRxEventAggregator.Examples.Events
 {
     public class HealthChanged
     {
