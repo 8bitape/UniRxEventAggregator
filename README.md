@@ -57,7 +57,7 @@ When subscribing to a `BehaviorSubject` the latest or default value is returned.
     
 To notify subscribers that a `BehaviorSubject` has changed:
 
-    Subject.OnNext(50);
+    Subject.OnNext(new Subject(50));
     
 To subscribe to a `BehaviorSubject` and call a method in response to changes:
 
