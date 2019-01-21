@@ -35,7 +35,7 @@ To subscribe to an event with a filter:
     
 ## BehaviourSubjects
 
-When subscribing to a `BehaviourSubject` the latest or default value is returned. To create and register a `BehaviorSubject` observable with default values:
+When subscribing to a `BehaviorSubject` the latest or default value is returned. To create and register a `BehaviorSubject` observable with default values:
 
     Subject
     {
