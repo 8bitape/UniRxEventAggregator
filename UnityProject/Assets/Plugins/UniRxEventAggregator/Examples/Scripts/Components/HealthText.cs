@@ -14,11 +14,12 @@ namespace UniRxEventAggregator.Examples.Components
 
             if (this.Text != null)
             {
-                this.Subscribe<CurrentHealth>(this.CurrentHealth);
+                // Subscribes to CurrentHealth BehaviourSubject and calls SetHealthText() in response to changes.
+                this.Subscribe<CurrentHealth>(this.SetHealthText);
             }
         }
 
-        private void CurrentHealth(CurrentHealth currentHealth)
+        private void SetHealthText(CurrentHealth currentHealth)
         {
             this.Text.text = string.Format("Health: {0}", currentHealth.Health);
         }

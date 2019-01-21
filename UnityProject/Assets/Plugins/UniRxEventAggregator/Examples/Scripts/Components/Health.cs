@@ -7,20 +7,25 @@ namespace UniRxEventAggregator.Examples.Components
 {
     public class Health : PubSubMonoBehaviour
     {
+        // When you subscribe to a BehaviourSubject the latest or default value is returned.
         public BehaviorSubject<CurrentHealth> CurrentHealth { get; private set; }
 
         private void Awake()
         {
+            // Set the default value of the BehaviourSubject.
             this.CurrentHealth = new BehaviorSubject<CurrentHealth>(new CurrentHealth(100));
 
+            // Register the BehaviourSubject so you can subscribe to it.
             this.Register(this.CurrentHealth);
 
-            this.Subscribe<HealthChanged>(this.HealthChanged);
+            // Subscribes to HealthChange event and calls SetHealth() in response.
+            this.Subscribe<HealthChange>(this.SetHealth);            
         }
 
-        private void HealthChanged(HealthChanged healthChanged)
+        private void SetHealth(HealthChange healthChange)
         {
-            this.CurrentHealth.OnNext(new CurrentHealth(this.CurrentHealth.Value.Health + healthChanged.Amount));
+            // OnNext tells subscribers that the value has changed.
+            this.CurrentHealth.OnNext(new CurrentHealth(this.CurrentHealth.Value.Health + healthChange.Amount));
         }
     }
 }

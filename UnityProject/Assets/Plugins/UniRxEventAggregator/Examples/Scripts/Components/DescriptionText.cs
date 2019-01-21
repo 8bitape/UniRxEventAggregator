@@ -15,19 +15,17 @@ namespace UniRxEventAggregator.Examples.Components
 
             if (this.Text != null)
             {
-                PubSub.GetEvent<HealthChanged>().Where(e => e.Amount > 0).Subscribe(e => this.HealthIncreased());
-                PubSub.GetEvent<HealthChanged>().Where(e => e.Amount < 0).Subscribe(e => this.HealthDecreased());
+                // Subscribes to HealthChange events where the amount is greater than zero and calls SetText() in response.
+                PubSub.GetEvent<HealthChange>().Where(e => e.Amount > 0).Subscribe(e => this.SetText("Health increased"));
+
+                // Subscribes to HealthChange events where the amount is less than zero and calls SetText() in response.
+                PubSub.GetEvent<HealthChange>().Where(e => e.Amount < 0).Subscribe(e => this.SetText("Health decreased"));
             }
         }
 
-        private void HealthIncreased()
+        private void SetText(string description)
         {
-            this.Text.text = "Health increased!";
-        }
-
-        private void HealthDecreased()
-        {
-            this.Text.text = "Health decreased!";
+            this.Text.text = description;
         }
     }
 }
