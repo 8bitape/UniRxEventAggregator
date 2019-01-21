@@ -24,7 +24,8 @@ namespace UniRxEventAggregator.Examples.Components
 
         private void HealthChange()
         {
-            PubSub.Publish(new HealthChanged(amount));
+            // Publishes the HealthChange event which notifies subscribers.
+            PubSub.Publish(new HealthChange(amount));
         }
     }
 }
