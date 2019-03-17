@@ -51,7 +51,7 @@ When subscribing to a `BehaviorSubject` the latest or default value is returned.
     {
       BehaviorSubject<Subject> Subject { get; private set; }
       
-      DataSubject = new BehaviorSubject<Subject>(new Subject(100));
+      Subject = new BehaviorSubject<Subject>(new Subject(100));
       Register(Subject);
     }
     
