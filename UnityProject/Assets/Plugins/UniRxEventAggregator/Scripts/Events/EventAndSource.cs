@@ -3,7 +3,7 @@ using UniRx;
 
 namespace UniRxEventAggregator.Events
 {
-    public class EventAndSource<T>
+    public struct EventAndSource<T>
     {
         public T Event { get; set; }
         public IObservable<T> Source { get; set; }
